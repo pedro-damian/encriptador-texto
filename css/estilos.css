@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: 'aldo';
-  src: url(./fonts/aldo\ pc.ttf);
+  src: url(/fonts/aldo\ pc.ttf);
   font-weight: bold;
   font-style: bold;
 }
@@ -37,7 +37,7 @@ header {
   margin-top: 40px;
   font-family: 'aldo';
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--color-font);
 }
 
@@ -90,6 +90,7 @@ header {
   color: #fff;
   font-size: 16px;
   border: 2px solid var(--color-font);
+  cursor: pointer;
 }
 .btn-desencriptar{
   width: 40%;
@@ -100,9 +101,10 @@ header {
   color: var(--color-font);
   font-size: 16px;
   border: 2px solid var(--color-font);
+  cursor: pointer;
 }
 .btn-copiar{
-  width: 80%;
+  width: 100%;
   max-width: 328px;
   height: 67px;
   border-radius: 24px;
@@ -110,11 +112,14 @@ header {
   color: var(--color-font);
   font-size: 16px;
   border: 2px solid var(--color-font);
-}
-
-.oculto {
+  cursor: pointer;
+  margin: 0 auto;
   display: none;
 }
+
+/* .oculto {
+
+} */
 
 .rigth{
   background-color: #fff;
@@ -126,6 +131,19 @@ header {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  box-shadow: 0px 24px 32px -8px #00000014;
+}
+
+.ajuste{
+}
+
+.ajustar{
+  height: auto;
+  justify-content: space-between;
+  min-height: calc(100% - 67px - 32px);
+  pointer-events: all;
+  text-align: left;
+  overflow: auto;
 }
 
 .muneco{
@@ -133,9 +151,15 @@ header {
 }
 
 .mensaje{
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   font-size: 24px;
+  color: var(--color-greyDark);
+	border: none;
+	outline: none;
+	overflow: hidden;
+	resize: none;
+	pointer-events: none;
 }
 
 .info-mensaje{

@@ -114,12 +114,12 @@ header {
   border: 2px solid var(--color-font);
   cursor: pointer;
   margin: 0 auto;
-  display: none;
+  
 }
 
-/* .oculto {
-
-} */
+.ocultar {
+  display: none;
+}
 
 .rigth{
   background-color: #fff;
@@ -134,8 +134,6 @@ header {
   box-shadow: 0px 24px 32px -8px #00000014;
 }
 
-.ajuste{
-}
 
 .ajustar{
   height: auto;

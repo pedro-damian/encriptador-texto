@@ -101,5 +101,5 @@ const btnCopiar = document.querySelector(".btn-copiar");
     btnCopiar.addEventListener("click", copiar = () => {
     var contenido = document.querySelector(".mensaje").textContent;
     navigator.clipboard.writeText(contenido);
-    console.log("hola"); 
+    alert("Texto Copiado")
 });
